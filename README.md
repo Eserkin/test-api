@@ -20,18 +20,18 @@ docker run --rm \
     composer install --ignore-platform-reqs
 ```
 
-## 2 Instalar dependecias
+## 4 Instalar dependecias
 Dentro del directorio principal del proyecto en una terminal y con Docker ya instalado.
 ```
 ./vendor/bin/sail up
 ```
 
-## 2 Correr archivo de migraciones para crear tablas en la base de datos
+## 5 Correr archivo de migraciones para crear tablas en la base de datos
 ```
 ./vendor/bin/sail artisan migrate
 ```
 
-## 3 Probar api en postman, importando el arhivo "Test.postman_collection.json" que se encuentra en el directorio principal. O mediante CURL por la terminal mediante el siguiente comando 
+## 6 Probar api en postman, importando el arhivo "Test.postman_collection.json" que se encuentra en el directorio principal. O mediante CURL por la terminal mediante el siguiente comando 
 ```
 curl --location --request POST 'http://localhost/api/numbers/get-perfect-numbers' \--form 'numbers="[1,2,6,100,450]"'
 ```
